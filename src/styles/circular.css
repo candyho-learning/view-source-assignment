@@ -41,12 +41,13 @@
 @media only screen and (min-width: 992px) {
   .flip-menu {
     width: 50%;
-    aspect-ratio: 1.1;
+    aspect-ratio: 0.8;
     margin-right: 80px;
   }
 }
 @media only screen and (min-width: 1600px) {
   .flip-menu {
+    aspect-ratio: 0.9;
     margin: 0 40px;
   }
 }
