@@ -1,0 +1,305 @@
+@import url("https://fast.fonts.net/lt/1.css?apiType=css&c=b18bd557-eca2-49ad-aa20-7fddfa3c5ab5&fontids=903436");
+
+@font-face {
+  font-family: "fake receipt";
+  font-style: normal;
+  font-weight: normal;
+  src: local("fake receipt"),
+    url("/src/fonts/fake-receipt_woff/fake\ receipt.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Arial W02 Rounded Bold";
+  src: url("/src/fonts/LT Arial Rounded Bold/Fonts/903436/f4f51a1b-cfa4-4a10-94e5-bbba26e15311.woff2")
+      format("woff2"),
+    url("/src/fonts/LT Arial Rounded Bold/Fonts/903436/e21820f0-ed6c-4236-895c-9d164babebc0.woff")
+      format("woff");
+}
+
+@font-face {
+  font-family: "PPNeueMontreal Medium";
+  src: url("/src/fonts/PPNeueMontreal-Medium\ v2.4/PPNeueMontreal-Medium.woff2")
+      format("woff2"),
+    url("/src/fonts/PPNeueMontreal-Medium\ v2.4/PPNeueMontreal-Medium.woff")
+      format("woff");
+}
+
+:root {
+  --brand-green: #daffbd;
+  --brand-black: #000000;
+  --brand-grey: #f3f1ed;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Arial W02 Rounded Bold";
+  text-align: center;
+  min-width: 375px;
+}
+
+h2 {
+  font-size: 40px;
+}
+
+h3 {
+  font-size: 55px;
+}
+
+h4 {
+  font-size: 20px;
+}
+
+p {
+  font-family: "PPNeueMontreal Medium";
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+.centered {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.homepage {
+  background-color: var(--brand-green);
+  margin: 0;
+}
+
+.homepage > * {
+  display: flex;
+  flex-direction: column;
+}
+
+section {
+  border-bottom: 1px dotted var(--brand-black);
+  padding: 40px 10px;
+}
+
+.hero {
+  align-items: center;
+  justify-content: space-around;
+  height: 100vh;
+}
+
+.hero-logo,
+.circular-front {
+  width: 80%;
+}
+
+.subnav {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: nowrap;
+  white-space: pre;
+  width: 100%;
+  justify-content: space-around;
+  font-family: "fake receipt";
+  overflow-x: scroll;
+  border-top: 1px dotted black;
+  border-bottom: 1px dotted black;
+  padding: 19px 0;
+  font-size: 12px;
+}
+
+.subnav > a {
+  margin: 0 40px;
+  border-bottom: 1px solid var(--brand-green);
+}
+
+.subnav > a :hover {
+  cursor: pointer;
+  border-bottom: 1px dotted black;
+}
+
+.subnav {
+  -ms-overflow-style: none; /* Internet Explorer 10+ */
+  scrollbar-width: none; /* Firefox */
+}
+.subnav::-webkit-scrollbar {
+  display: none; /* Safari and Chrome */
+}
+
+.intro {
+  text-align: center;
+  font-size: 30px;
+  line-height: 1.1;
+  padding: 10px 25px;
+}
+
+.flip-menu {
+  margin: 0 auto;
+}
+
+.circular-title {
+  width: 95%;
+  margin: 0 auto;
+}
+
+.cta-btn {
+  background-color: var(--brand-black);
+  border-radius: 20px;
+  color: var(--brand-grey);
+  border: none;
+  padding: 12px 25px;
+  font-size: 15px;
+  filter: drop-shadow(0px 4px 5px #454545);
+}
+
+.our-brands,
+.submit-products {
+  border-bottom: none;
+}
+
+.our-brands-title {
+  font-size: 55px;
+}
+
+.brand-group {
+  border-bottom: 1px dotted var(--brand-black);
+  padding: 20px 10px;
+}
+
+.brand-group-title {
+  font-size: 20px;
+  font-family: "PPNeueMontreal Medium";
+  margin: 20px 16px 20px 0;
+}
+
+.brand-names {
+  height: 120px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.brand-name {
+  font-size: 17px;
+  font-family: "PPNeueMontreal Medium";
+  margin: 8px 16px 8px 0;
+}
+
+.submit-products,
+.our-brands {
+  text-align: left;
+}
+
+.shop-icon {
+  width: 87px;
+  margin-top: 30px;
+}
+
+.submit-products-form > * {
+  margin: 15px 0;
+  font-weight: 400;
+}
+
+.form-field {
+  outline: none;
+  border: none;
+  background-color: transparent;
+  border-bottom: 1px solid var(--brand-black);
+  width: 100%;
+  padding: 10px 0;
+}
+
+input[type="file"] {
+  border: 1px dotted var(--brand-black);
+  border-radius: 5px;
+  margin: 10px 0;
+  width: 100%;
+  height: 59px;
+}
+
+.inquiry {
+  width: 100%;
+  background-color: transparent;
+  border: 1px solid var(--brand-black);
+  border-radius: 5px;
+  height: 142px;
+}
+
+@media only screen and (min-width: 992px) {
+  h4 {
+    font-size: 30px;
+  }
+
+  .homepage > * {
+    flex-direction: row;
+  }
+
+  .hero {
+    height: 700px;
+    padding: 0 40px;
+  }
+
+  .hero-logo {
+    width: 50%;
+  }
+
+  .intro {
+    font-size: 52px;
+    line-height: 1.1;
+    padding: 10px 55px;
+  }
+
+  .circular {
+    flex-direction: row-reverse;
+    align-items: center;
+    text-align: left;
+    padding-left: 30px;
+  }
+
+  .circular-title {
+    width: 50%;
+  }
+
+  .circular-front {
+    max-width: 640px;
+    width: 70%;
+  }
+
+  .our-brands {
+    border-bottom: 1px dotted var(--brand-black);
+    padding: 20px;
+  }
+
+  .our-brands-title {
+    margin-top: 20px;
+    width: 20%;
+  }
+
+  .brand-group-wrapper {
+    width: 80%;
+    flex-basis: 30%;
+    margin-left: 100px;
+  }
+
+  .brand-names {
+    height: fit-content;
+  }
+
+  .submit-products {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+
+  .left {
+    width: 50%;
+    border-right: 1px dotted var(--brand-black);
+    padding: 0 40px;
+    flex-shrink: 0;
+  }
+
+  form {
+    padding: 0 40px;
+  }
+}
