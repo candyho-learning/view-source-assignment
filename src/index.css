@@ -37,7 +37,8 @@
 body {
   margin: 0;
   padding: 0;
-  font-family: "Arial W02 Rounded Bold";
+  font-family: "Arial W02 Rounded Bold", Arial Rounded MT Bold, Arial Black,
+    Impact, Verdana, sans-serif;
   text-align: center;
   min-width: 400px;
 }
@@ -57,7 +58,8 @@ h4 {
 }
 
 p {
-  font-family: "PPNeueMontreal Medium";
+  font-family: "PPNeueMontreal Medium", Helvetica Neue, Arial, Helvetica,
+    Segoe UI, sans-serif;
 }
 
 button:hover {
@@ -65,7 +67,8 @@ button:hover {
 }
 
 label {
-  font-family: "PPNeueMontreal Medium";
+  font-family: "PPNeueMontreal Medium", Helvetica Neue, Arial, Helvetica,
+    Segoe UI, sans-serif;
   font-weight: 400;
   font-size: 15px;
 }
@@ -113,7 +116,8 @@ section.submit-products {
   white-space: pre;
   width: 100%;
   justify-content: space-around;
-  font-family: "fake receipt";
+  font-family: "fake receipt", Consolas, Lucida Console, MS Gothic, Dot Matrix,
+    monospace, sans-serif;
   overflow-x: scroll;
   border-top: 1px dotted black;
   border-bottom: 1px dotted black;
@@ -181,7 +185,8 @@ section.submit-products {
 
 .brand-group-title {
   font-size: 20px;
-  font-family: "PPNeueMontreal Medium";
+  font-family: "PPNeueMontreal Medium", Helvetica Neue, Arial, Helvetica,
+    Segoe UI, sans-serif;
   margin: 20px 16px 20px 0;
 }
 
@@ -195,7 +200,8 @@ section.submit-products {
 
 .brand-name {
   font-size: 17px;
-  font-family: "PPNeueMontreal Medium";
+  font-family: "PPNeueMontreal Medium", Helvetica Neue, Arial, Helvetica,
+    Segoe UI, sans-serif;
   margin: 8px 16px 8px 0;
 }
 
