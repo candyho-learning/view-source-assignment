@@ -29,25 +29,32 @@ export default function SubmitProducts() {
       </div>
       <form action="" className="submit-products-form">
         {FORM_FIELDS.map((item) => (
-          <input
-            type={item.type}
-            aria-label={item.name}
-            placeholder={item.placeholder.concat(item.required ? "*" : "")}
-            className="form-field"
-            key={item.name}
-            required={false}
-          />
+          <div className="field-wrapper" key={item.name}>
+            <label htmlFor={item.name} className="submit-products-form-label">
+              {item.placeholder.concat(item.required ? "*" : "")}
+            </label>
+            <input
+              type={item.type}
+              aria-label={item.name}
+              className="form-field"
+              placeholder={item.placeholder.concat(item.required ? "*" : "")}
+              required={false}
+              name={item.name}
+            />
+          </div>
         ))}
-        <div className="input-group">
+        <div className="input-group upload">
           <label htmlFor="upload" className="upload">
             Sell Sheet or Product Catalog
-            <input type="file" placeholder="Upload a File" name="upload" />
           </label>
+          <div className="upload-box">
+            <input type="file" placeholder="Upload a File" name="upload" />
+          </div>
         </div>
 
-        <label htmlFor="">Messages*</label>
+        <label htmlFor="inquiry">Messages*</label>
 
-        <textarea className="inquiry"></textarea>
+        <textarea className="inquiry" name="inquiry"></textarea>
         <button type="submit" className="cta-btn">
           Submit
         </button>

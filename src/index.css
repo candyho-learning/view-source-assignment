@@ -208,6 +208,10 @@ section.submit-products {
   font-weight: 400;
 }
 
+.submit-products-form-label {
+  display: none;
+}
+
 .form-field {
   outline: none;
   border: none;
@@ -217,12 +221,15 @@ section.submit-products {
   padding: 10px 0;
 }
 
-input[type="file"] {
+.upload-box {
   border: 1px dotted var(--brand-black);
   border-radius: 5px;
   margin: 10px 0;
   width: 100%;
   height: 59px;
+  display: flex;
+  align-items: center;
+  padding: 5px 10px;
 }
 
 .inquiry {
