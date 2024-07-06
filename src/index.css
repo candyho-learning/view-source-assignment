@@ -64,6 +64,12 @@ button:hover {
   cursor: pointer;
 }
 
+label {
+  font-family: "PPNeueMontreal Medium";
+  font-weight: 400;
+  font-size: 15px;
+}
+
 .centered {
   display: flex;
   justify-content: center;
@@ -219,6 +225,11 @@ section.submit-products {
   border-bottom: 1px solid var(--brand-black);
   width: 100%;
   padding: 10px 0;
+}
+
+::placeholder {
+  color: var(--brand-black);
+  font-size: 15px;
 }
 
 .upload-box {

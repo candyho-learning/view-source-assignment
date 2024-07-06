@@ -45,7 +45,7 @@ export default function SubmitProducts() {
         ))}
         <div className="input-group upload">
           <label htmlFor="upload" className="upload">
-            Sell Sheet or Product Catalog
+            Sell Sheet or Product Catalog*
           </label>
           <div className="upload-box">
             <input type="file" placeholder="Upload a File" name="upload" />
