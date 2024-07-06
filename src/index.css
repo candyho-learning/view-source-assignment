@@ -322,6 +322,9 @@ section.submit-products {
 
   .brand-names {
     height: fit-content;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
   }
 
   .submit-products {
