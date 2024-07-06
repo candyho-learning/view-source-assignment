@@ -39,7 +39,7 @@ body {
   padding: 0;
   font-family: "Arial W02 Rounded Bold";
   text-align: center;
-  min-width: 375px;
+  min-width: 400px;
 }
 
 h2 {
@@ -83,6 +83,10 @@ button:hover {
 section {
   border-bottom: 1px dotted var(--brand-black);
   padding: 40px 10px;
+}
+
+section.submit-products {
+  padding-bottom: 0;
 }
 
 .hero {
@@ -177,9 +181,10 @@ section {
 
 .brand-names {
   height: 120px;
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  /* flex-direction: column;
+  flex-wrap: wrap; */
 }
 
 .brand-name {
